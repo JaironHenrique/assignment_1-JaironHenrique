@@ -1,0 +1,42 @@
+* Lista de Exercícios 1: Numpy
+
+  A lista é composta por 4 funções (arquivo exercises.py) que deve completa-las como pedido.
+
+  Não é permitido importar outras bibliotecas nem utilizar loops, como for, while
+ou comprehension lists.
+
+** Para rodar os testes (no terminal)
+
+   #+BEGIN_SRC shell
+     sudo -H pip3 install pytest
+   #+END_SRC
+
+   #+BEGIN_SRC shell
+     pytest test1.py
+   #+END_SRC
+
+   #+BEGIN_SRC shell
+     pytest test2.py
+   #+END_SRC
+
+   #+BEGIN_SRC shell
+     pytest test3.py
+   #+END_SRC
+
+   #+BEGIN_SRC shell
+     pytest test4.py
+   #+END_SRC
+
+** Entrega
+
+   Para entregar a lista basta subir a mudanças para o GitHub.
+
+   Automaticamente o GitHub rodará os teste e retornará os resultados.
+
+   É permitido qualquer número de entregas dentro do prazo.
+
+   Caso algum teste falhe, recomendo refazer o exercício correspondente e entregar novamente.
+
+** Nota
+
+   A nota é a soma dos pesos dos exercícios que passarem nos testes no GitHub.
