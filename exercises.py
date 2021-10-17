@@ -36,7 +36,7 @@ def exercise1(dates: np.ndarray, date: np.datetime64):
               dtype='datetime64[D]')
     '''
 
-    pass
+    return dates[(dates - date).astype(int) % 7 == 0]
 
 
 def exercise2(arr: np.ndarray):
@@ -61,7 +61,9 @@ def exercise2(arr: np.ndarray):
         (5.0, 5.3)
     '''
 
-    pass
+    shift = np.concatenate((np.array([0]), arr))[:-1]
+    maximo = (arr - shift)[1:].argmax()
+    return arr[maximo], arr[maximo+1]
 
 
 def exercise3(arr: np.ndarray):
@@ -86,7 +88,7 @@ def exercise3(arr: np.ndarray):
                [2, 3, 4]])
     '''
 
-    pass
+    return np.delete(arr, (arr.std(axis = 0).argmax()), axis = 0)
 
 
 def exercise4(img: np.ndarray):
